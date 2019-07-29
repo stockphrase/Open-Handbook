@@ -1,0 +1,250 @@
+
+\hypertarget{joyofreuse}{}
+
+\chapter{The Joy of Reuse (Save Your Work)}
+
+
+\section{Save all your work}
+
+Most students complete their school work, turn it in to their professor, then never think of it again. These efforts then cross the event horizon into the black hole of a computer hard drive, never to emerge again. If this sounds like your standard practice, consider a change now that you've arrived at college. When you write something (essays, notes, reports, projects, code), or when you use something (course readings, research, data), keep a copy of it in some organized folder system so you may return to it in the future. 
+
+Taking the time to meticulously save all this work may sound counterintuitive\textemdash the class is over, right? But that essay you wrote freshman year, the notes you took on a scholarly article, the readings you dutifully annotated in your history class, may be very useful to you in some future project that you can't anticipate now. And while it is important to save your finished work, it is also critical that \emph{you save the research or notes or data that contributed to that project as well}. Try, as best you can, to capture \emph{all} of the inputs that led to your finished work and save it in some organized way. Successful scholars and students return to prior work all the time\textemdash reshaping, repurposing, and extending prior efforts. They understand that knowledge is cumulative: it accretes and deepens over time, often by building on what came before. \emph{This is the joy of reuse}. Summarily tossing all of your work into the black hole forces you to start over again and again. 
+
+\section{Staying organized}
+
+To retain your work and stay organized, you might use a simple paper system made up of manila folders. Or you might use a hierarchical folder system on your computer, organized by class, project, or term. Alternatively, you might embrace a powerful bibliographic manager like \href{www.zotero.org}{Zotero}. Whatever you choose, create a system for staying organized and stick with it. 
+
+\subsection{A poor file-saving strategy}
+
+I assume that most students today will embrace an electronic system to manage their workflows, take notes, and compose texts. Let's imagine two archive systems to store this typical scholarly work. Consider the following file structure:
+
+\medskip
+
+{\large
+\begin{tikzpicture}%
+  \draw[color=black!60!white]
+  \FTdir(\FTroot,root,/){       % root: parent = \FTroot
+    \FTdir(root,etc,\textbf{My Documents}){       % normal dir: (parentID, currentID, label)
+      \FTfile(etc,Notes.docx) 
+      \FTfile(etc,Notes2.docx) 
+      \FTfile(etc,Nosetalgia.mp3) 
+      \FTfile(etc,Essay.docx) 
+      \FTfile(etc,Revision.docx) 
+      \FTfile(etc,syllabus.pdf) 
+      \FTfile(etc,hack-dartmouth.py)
+      \FTfile(etc,MyDogRex.jpg) 
+      \FTfile(etc,ideas.docx)       % file:       (parentID, label)
+      \FTdir(root,Stuff,\textbf{Stuff})
+    }
+  };
+  \end{tikzpicture}  
+}
+ 
+\begin{center} \{ \hloy{A poor file-saving strategy} \} \end{center}
+
+\noindent The strategy represented here breaks down very quickly for two reasons. First, after a few weeks of accumulating notes, readings, research, and other important documents, a system with no hierarchically organized folders becomes a confusing and unhelpful jumble. Secondly, the choices for naming the files actively resist discovery and recognition. What, for example, is the subject of \hloy{Notes.docx}? What class was it from? What lecture? What project were these notes taken for? Of the many essays you wrote, which one is \hloy{Essay.docx}? And \hloy{Revision.docx} is a revision of what, precisely? A year from now you won't remember, but you may very well care at that time. Unfortunately, the folder into which you've dumped these files will have swelled to a debilitating size that will disrupt any attempts to make use of your hard work. 
+
+\subsection{A better file-saving strategy}
+
+Instead of this haphazard and unhelpful approach, each time you place an artifact in your archive, think about your future self who will want to find something quickly, with minimal effort. An important first step in this process is to adopt some kind of logical foldering structure that quickly reduces the effort of finding a particular item. You should make considered and thoughtful decisions about your archive's structure. Perhaps you will choose to organize your work by year, or term, or class, or project. There are pluses and minuses to any organizational schema, but changing things up later is difficult, so choose wisely. 
+
+Perhaps the most critical step in the construction of your scholarly archive is to adopt a \textbf{strict naming convention} for your folders and files. Keep in mind sociologist Kieran Healy's \href{https://kieranhealy.org/files/papers/plain-person-text.pdf}{helpful advice} that a "file or folder should always be able to tell you what it is" (7) without having to actually open it. Taking this sound advice, we might revise the previous filing strategy like this:
+
+\medskip
+
+{\large
+\begin{tikzpicture}%
+  \draw[color=black!60!white]
+  \FTdir(\FTroot,root,/){       % root: parent = \FTroot
+    \FTdir(root,My Documents,\textbf{My Documents}){       % normal dir: (parentID, currentID, label)
+      \FTdir(My Documents,Courses,\textbf{Courses})       % file:       (parentID, label)
+      \FTdir(Courses,Writing,\textbf{Writing 2-3-F19}){
+        \FTfile(Writing,notes-Percy-10-28-19.docx)
+        \FTfile(Writing,notes-Freire-11-5-19.docx)
+        \FTfile(Writing,Essay1-draft1-9-07-19.docx)
+        \FTfile(Writing,Essay1-draft2-9-15-19.docx)
+        \FTfile(Writing,WR23-syllabus.pdf)
+        \FTdir(Courses,CS1,CS1-F19){
+        \FTfile(CS1,hack-dartmouth.py)
+    	\FTdir(root,Music,\textbf{Music}){
+    	\FTfile(Music,Pusha-T-Nosetalgia.mp3)
+    	\FTdir(root,Photos,\textbf{Photos}){
+    	\FTfile(Photos,MyDogRex.jpg)
+    
+      }
+      }}}}
+  };
+  \end{tikzpicture}
+}
+
+\begin{center} \{ \hloy{A better file-saving strategy} \} \end{center}
+
+Your system will obviously become far more complex than the simplified example presented above. (You might, for example, want to create subfolders within a class to further organize your files). However, the key features of a good filing system are detectable here: 1) there is a logical structure to the organization, using course names and file types to determine the names of the folders and 2) the naming convention for the folders and files tell you exactly what they are without having to open them. There is no right or wrong way to make a filing system, and one size will not fit all. You will have to determine for yourself what system makes sense to order all your work and research. 
+
+\section{Very Large Filing Systems}
+
+Most students would be fine if they use the simple filing system described above, where folders are determined by course or term. But if you have an expectation of a very large file system, or if you plan to share a file system with other researchers, you should consider a slightly different approach to the naming of files and folders. Large collections of files are quite difficult to manage; this is especially true when additional researchers are involved with saving and editing files in the shared directory. Special care in the naming of files and folders is critical here to avoid confusion and lost data. 
+
+\begin{itemize}
+\item While each project is different and will require its own approach, there are two best practices that should be followed in any shared research repository: a plaintext \textbf{README} file in each project directory and \textbf{a strict naming convention} for files and folders, described below.  
+\end{itemize}
+
+\subsection{An example README file}
+
+A README file is simply a plaintext file that contains general information about a project. It functions like a roadmap that helps other researchers orient themselves to a new project and helps them coordinate their efforts more easily.  Information in a README might include the following:
+
+\begin{itemize}
+\item A short overview of the project.
+\item The names and contact information of the researchers.
+\item An inventory list of all the data or documents within a directory (with a short description of what they are). 
+\item If the project involves software: a description of installation, dependencies, how to report bugs, licensing, etc.
+\item Descriptions of file versions, if they are revised in some way.
+\item If there are multiple subfolders (as in the example at right), those folder paths should be clearly indicated to show their location and contents.
+\item A dated list of updates to the project as they occur. 
+\item Suggested naming conventions for files and subfolders.
+\item Descriptions of how other interested researchers can join you and your work.
+
+\end{itemize}
+
+\begin{center}
+\begin{tcolorbox}[colframe=oyster, coltitle=black, sharp corners, title=README.md]
+
+\textbf{RESEARCH PROJECT ALPHA}
+
+\medskip
+
+[Include an explanation of project]
+
+\medskip
+
+\textbf{\# Researchers}
+
+\textbf{-} Jeff Goldbug: {\color{green}jeff.g.goldbug19@dartmouth.edu}
+
+\textbf{-} Alain Frenchy: {\color{green}alain.frenchy@stanford.edu}
+
+\textbf{-} Chloe Vinyl-Siding: {\color{green}chloe.vinyl-siding@gmail.com}
+
+\medskip
+
+\textbf{\# Data Inventory}
+
+\smallskip
+
+{\color{green}\textbf{/ProjectAlpha/Data/:}}
+
+- \textbf{201907-EditData.xlsx} (data on edits)
+
+- \textbf{201907-EditData.RData} (R dataset file)
+
+- \textbf{201907-GrantLetter.docx} (Letter to Rich Foundation)
+
+- \textbf{201907-Visualization.py} (Data visualization program)
+
+- \textbf{201910-VisualizationV01.py} (Update; bugfix \#14)
+
+- \textbf{201911-VisualizationV02.py} (Update; bugfix \#15)
+
+. . . \medskip
+
+\textbf{\# Documents}
+
+{\color{green}\textbf{/ProjectAlpha/Docs/:}}
+
+- \textbf{201910-Bibliography.docx} (Project bibliography)
+
+- \textbf{201910-Presentation.pptx} (Class presentation)
+
+\medskip
+
+\textbf{\# Updates}
+
+- 20191012: Updated bibliography entries
+
+- 20191028: Update to visualization program
+
+- 20191103: Update to visualization program
+
+\end{tcolorbox}
+
+\end{center}
+
+\subsection{File-naming advice}
+
+Avoid using spaces or underscores in the naming of folders, as some computer systems or programs will have difficulty with them. Instead, use CamelCase and dashes to make the folder and file names more human-readable.
+
+\subsection{Naming top-level project folders}
+
+\begin{itemize}
+\item \hloy{\textbf{/} ProjectAlpha} 
+
+\hspace{.25cm} - Project name in CamelCase.
+
+\item \hloy{\textbf{/} 201908-ProjectAlpha} 
+
+\hspace{.25cm} - Date in YYYYMM format will help with sorting in file managers.
+
+\item \hloy{\textbf{/} ProjectAlpha-AT} 
+
+\hspace{.25cm} - Author initials may be included, if needed.
+\end{itemize}
+
+\subsection{Naming files}
+
+
+\begin{itemize}
+
+\item \hloy{YYYYMM-FileName.docx} 
+
+\hspace{.25cm} -Prototypical example.
+
+\item \hloy{201910-FileNameV01.docx} 
+
+\hspace{.25cm} - File revision/version; \emph{use two digits with leading zero for proper sorting in file managers}
+
+\item \hloy{201910-FileNameDraft.docx} 
+
+\hspace{.25cm} - A draft version
+
+\item \hloy{201911-FileNameFinal.docx} 
+
+\hspace{.25cm} - A final version
+
+\item \hloy{201912-FileNameDraftAT.docx} 
+
+\hspace{.25cm} - Include initials at the end of the file, if needed.
+
+\end{itemize}
+
+\subsection{A very large file system example}
+
+{\large
+\begin{tikzpicture}%
+  \draw[color=black!60!white]
+  \FTdir(\FTroot,root,/){       % root: parent = \FTroot
+    \FTdir(root,etc,\textbf{ProjectAlpha}){       % normal dir: (parentID, currentID, label)
+      \FTfile(etc,201907-WebScraper.py) 
+      \FTfile(etc,201908-ProcedureManual.docx) 
+      \FTfile(etc,201910-DataDump01.xls) 
+      \FTfile(etc,201910-DataDump02.xls) 
+      \FTfile(etc,201910-DataDump01Analysis.docx) 
+      \FTfile(etc,201911-PublicTalkPresentation.pptx) 
+      \FTfile(etc,201911-Visualization.rdata) 
+      \FTfile(etc,201911-VisualizationV01.rdata)
+      \FTfile(etc,201912-VisualizationV02.rdata) 
+      \FTfile(etc,201911-VisualizationV03.rdata)  
+      \FTfile(etc,. . .) 
+      \FTfile(etc,README.md)      
+      \FTdir(root,Stuff,\textbf{ProjectBeta})
+    }
+  };
+  \end{tikzpicture}  
+}
+
+\section{Back up all your data}
+
+All of this hard work of organizing will be for nothing, however, if you don't take pains to back up your data. \textbf{Please, I beg of you, back up all your data regularly and keep a copy separate from your main working computer}. There are heartbreaking stories of people losing years of work in a hard drive failure, theft, or house fire/flood. Few people are disciplined enough to back up their work regularly on their own initiative. Instead, you should embrace some kind of \href{https://www.jwz.org/blog/2007/09/psa-backups/}{regular, automated system} to ensure your work will survive any tragedy. 
+
+\begin{itemize}
+\item At some point in the future you will boot up your laptop and it will begin smoking, or be infected by ransomeware, or display the \href{https://en.wikipedia.org/wiki/Blue_Screen_of_Death}{BSoD}. You will have no backups. As you cry salty tears you will remember reading these words and not doing anything about it. \textbf{ -- I told you so}.
+\end{itemize}
