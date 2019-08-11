@@ -343,7 +343,7 @@ diagram:
 \begin{tikzpicture}
   \tikzset{venn circle/.style={draw,circle,minimum width=6cm,fill=#1,opacity=0.4,text opacity=1}}
 
-  \node [venn circle = orange] (A) at (0,0) {$cognitive$};
+  \node [venn circle = green] (A) at (0,0) {$cognitive$};
   \node [venn circle = white] (B) at (60:4cm) {$linguistics$};
   \node [venn circle = gray] (C) at (0:4cm) {$childhood$};
   \node[left] at (barycentric cs:A=1/2,B=1/2 ) {};
@@ -377,7 +377,7 @@ the three search terms, it will be excluded from the results.
 \begin{tikzpicture}
   [venn circle/.style={draw,circle,minimum width=6cm,fill=#1,opacity=0.4,text opacity=1}]
 
-  \node [venn circle = gray] (A) at (0,0) {$Virginia$};
+  \node [venn circle = green] (A) at (0,0) {$Virginia$};
   %\node [venn circle = white] (B) at (60:4cm) {$Ohio$};
   \node [venn circle = gray] (C) at (0:5cm) {$Ohio$};
   %\node[left] at (barycentric cs:A=1/2,B=1/2 ) {};
@@ -413,7 +413,7 @@ results.
 
 \begin{tikzpicture}
   \tikzset{venn circle/.style={draw,circle,minimum width=6cm,fill=#1,opacity=0.4,text opacity=1}}
-  \node [venn circle = gray] (A) at (0,0) {$Alternative \ Energy$};
+  \node [venn circle = green] (A) at (0,0) {$Alternative \ Energy$};
   \path [draw=none,fill=white] (1,-1.3) circle (.8);
     \draw[dotted] (1,-1.3) circle (.8) node{solar};
     %\draw[solid] (0,-1) circle (2);
