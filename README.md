@@ -18,3 +18,6 @@ If you would like to contribute, create a fork of the project at my
 [Github](https://github.com/stockphrase/OpenHandbook) page.
 
 
+# Abandoning Project
+
+This LaTex project has been abandoned; all updates are now at https://no-silo.com
